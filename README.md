@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 * [@ng-bootstrap/ng-bootstrap](https://ng-bootstrap.github.io/)
 * [Bootstrap 4](https://getbootstrap.com/)
+* [ngx-google-places-autocomplete](https://www.npmjs.com/package/ngx-google-places-autocomplete)
 
 ## Development server
 
@@ -15,10 +16,20 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+### Components
+
 ```bash
 ng g c components/search
 ng g c components/form
-ng g c components/map
+ng g c components/table
+ng g c components/modal
+```
+
+### Service
+
+```bash
+ng g s services/search
+ng g s services/cities
 ```
 
 ## Build

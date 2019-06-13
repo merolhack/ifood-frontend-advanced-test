@@ -1,3 +1,12 @@
-<p>
-  form works!
-</p>
+<div *ngIf="loading">loading...</div>
+
+<h4>Find music based on your city weather</h4>
+<form>
+  <div class="form-group">
+    <label for="city">Find your city:</label>
+    <input ngx-google-places-autocomplete name="city" placeholder="Enter the name of your city" type="text"
+      class="form-control" [options]='options' #placesRef="ngx-places"
+      (onAddressChange)="handleAddressChange($event)" />
+  </div>
+  <button type="button" class="btn btn-primary" (click)="findTracks()">Find music</button>
+</form>
