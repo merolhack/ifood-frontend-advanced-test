@@ -1,14 +1,25 @@
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col" sortable="name" (sort)="onSort($event)">Country</th>
-      <th scope="col" sortable="area" (sort)="onSort($event)">Area</th>
-      <th scope="col" sortable="population" (sort)="onSort($event)">Population</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let track of tracks">
-    </tr>
-  </tbody>
-</table>
+<div *ngIf="isOpen">
+  <h4>Genre selected: {{data.seeds[0].id}}</h4>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col" sortable="name" (sort)="onSort($event)">Name</th>
+        <th scope="col" sortable="popularity" (sort)="onSort($event)">Popularity</th>
+        <th scope="col" sortable="preview" (sort)="onSort($event)">Preview</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let track of data.tracks">
+        <td>{{track.track_number}}</td>
+        <td><a href="{{track.external_urls.spotify}}" target='_blank'>{{track.name}}</a></td>
+        <td>{{track.popularity}}</td>
+        <td>
+          <video *ngIf="track.preview_url" controls #audioOption>
+              <source src="{{track.preview_url}}" type="audio/mpeg">
+          </video>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -37,20 +37,6 @@ export class SearchService {
         throwError(error);
         return of(null);
       }));
-    /* const promise = new Promise((resolve, reject) => {
-      this.http.get(this.endpoint, options)
-        .toPromise()
-        .then(
-          res => { // Success
-            console.log('res', res);
-            resolve(res);
-          },
-          msg => { // Error
-            reject(msg);
-          }
-        );
-    }); */
-    // return promise;
   }
 
   private errorHandler(error: any): void {

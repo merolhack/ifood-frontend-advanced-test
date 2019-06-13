@@ -7,6 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * [@ng-bootstrap/ng-bootstrap](https://ng-bootstrap.github.io/)
 * [Bootstrap 4](https://getbootstrap.com/)
 * [ngx-google-places-autocomplete](https://www.npmjs.com/package/ngx-google-places-autocomplete)
+* [ngx-spinner](https://www.npmjs.com/package/ngx-spinner)
 
 ## Development server
 
@@ -29,7 +30,15 @@ ng g c components/modal
 
 ```bash
 ng g s services/search
-ng g s services/cities
+```
+
+### Models
+
+```bash
+ng g class models/deserializable.model
+ng g class models/spotify.model
+ng g class models/seeds.model
+ng g class models/tracks.model
 ```
 
 ## Build

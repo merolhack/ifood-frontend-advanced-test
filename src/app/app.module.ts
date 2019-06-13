@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,8 +25,10 @@ import { ModalComponent } from './components/modal/modal.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     NgbModule,
-    GooglePlaceModule
+    GooglePlaceModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
