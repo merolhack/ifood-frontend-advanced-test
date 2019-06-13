@@ -1,4 +1,8 @@
 <div class="container">
-  <app-form (toggle)="toggleTable($event)"></app-form>
-  <app-table [isOpen]="tableIsOpened" [data]="dataSet"></app-table>
+  <div class="row">
+    <app-form (toggle)="toggleTable($event)"></app-form>
+  </div>
+  <div class="row">
+    <app-table [isOpen]="tableIsOpened" [data]="dataSet"></app-table>
+  </div>
 </div>

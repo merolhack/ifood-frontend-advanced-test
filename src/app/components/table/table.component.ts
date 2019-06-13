@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, HostBinding, Input } from '@angular/core';
 import { Spotify } from 'src/app/models';
 
 @Component({
@@ -15,13 +15,7 @@ export class TableComponent implements OnInit {
   @HostBinding('class.is-open') @Input()
   isOpen = false;
 
-  @ViewChild('audioOption') audioPlayerRef: ElementRef;
-
   tracks = [];
-
-  onAudioPlay() {
-    this.audioPlayerRef.nativeElement.play();
-  }
 
   ngOnInit(): void {
   }
