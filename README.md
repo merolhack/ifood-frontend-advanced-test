@@ -41,6 +41,16 @@ ng g class models/seeds.model
 ng g class models/tracks.model
 ```
 
+## Links
+
+* [3 ways to communicate between Angular components](https://medium.com/@mirokoczka/3-ways-to-communicate-between-angular-components-a1e3f3304ecb)
+* [Spring Boot 2 + Angular 7 CRUD Example Tutorial](https://www.javaguides.net/2019/02/spring-boot-2-angular-7-crud-example-tutorial.html)
+* [Http - Observable completed function not firing #7865](https://github.com/angular/angular/issues/7865)
+* [Angular HttpClient with RxJS Observable Example](https://howtodoinjava.com/angular/rxjs-observable-httpclient/)
+* [Angular HTTP Client - Quickstart Guide](https://blog.angular-university.io/angular-http/)
+* [Angular 7 Tutorial - Learn Angular 7 by Example](https://coursetro.com/posts/code/171/Angular-7-Tutorial---Learn-Angular-7-by-Example)
+* [Angular 7 Bootstrap 4 UIs: ng-bootstrap and ngx-bootstrap [Part 1]](https://www.techiediaries.com/angular-bootstrap-ui/)
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
