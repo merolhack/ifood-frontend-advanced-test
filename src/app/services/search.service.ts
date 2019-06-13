@@ -8,7 +8,7 @@ import { catchError, retry } from 'rxjs/operators';
 })
 export class SearchService {
   // 34.94.108.97
-  endpoint = 'http://localhost:8080/api/v1/tracks';
+  endpoint = 'http://34.94.144.245:8080/api/v1/tracks';
 
   constructor(private http: HttpClient) { }
 
