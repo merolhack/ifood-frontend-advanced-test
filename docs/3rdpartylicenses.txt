@@ -89,6 +89,9 @@ THE SOFTWARE.
 ngx-google-places-autocomplete
 MIT
 
+ngx-spinner
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
